@@ -1,0 +1,12 @@
+
+<ul class="nav">
+  <% if user_signed_in? %>
+    <li><%= link_to "Browse Products", "" %></li>
+    <li><%= link_to "Price List" %></li>
+    <li><%= link_to "Contact Us" %></li>
+    <li><%= link_to "Cart" %></li>
+  <% else %>
+    <li><%= link_to "Login", new_user_session_path %></li>
+    <li><%= link_to "Sing Up", new_user_registration %></li>
+  <% end %>
+</ul>
