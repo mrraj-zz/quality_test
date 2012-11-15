@@ -13,4 +13,7 @@ class ApplicationController < ActionController::Base
   def render_404
     render :template => "errors/404", :format => [:html], :layout => "application"
   end
+
+  def a
+  end
 end
