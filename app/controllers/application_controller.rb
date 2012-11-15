@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
 
   #This is for new branch
+  #This is for new branch
   protect_from_forgery
 
   before_filter :authenticate_user!, :redirect_www_to_normal
